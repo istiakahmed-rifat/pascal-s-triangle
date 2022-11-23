@@ -2,14 +2,14 @@
 int factorial(int r){
     int f;
     if(r==0 || r==1){return 1;}
-    else{f= f*factorial(f-1);}
+    else{f= r*factorial(r-1);}
     return f;
 }
 void triangle(int n){
 for(int line=n;line>=0; line--){ //prints n+1 number of lines
 
     for(int r=0;r<=n;r++){
-        printf("%d", (factorial(n))/(factorial(r)*factorial(n-r)));
+        printf("%d", (factorial(n))/(factorial(r)*factorial(n-r))); //formula for nCr
     }
     printf("\n");
     }
